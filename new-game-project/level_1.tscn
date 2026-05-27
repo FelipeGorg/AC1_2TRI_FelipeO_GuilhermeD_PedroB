@@ -4,6 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://ckudr8chj1kgo" path="res://player.tscn" id="2_hn12h"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_ihfcg"]
+distance = -4.0
 
 [node name="Level 1" type="Node2D" unique_id=1349481132]
 
@@ -15,8 +16,8 @@ scale = Vector2(11.642858, 1)
 texture = ExtResource("1_hbghi")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Chão" unique_id=68529374]
-position = Vector2(309, 263)
+position = Vector2(309, 269)
 shape = SubResource("WorldBoundaryShape2D_ihfcg")
 
-[node name="Player" parent="Chão" unique_id=441076250 instance=ExtResource("2_hn12h")]
-position = Vector2(367, 429)
+[node name="Player" parent="." unique_id=441076250 instance=ExtResource("2_hn12h")]
+position = Vector2(465, 237)
