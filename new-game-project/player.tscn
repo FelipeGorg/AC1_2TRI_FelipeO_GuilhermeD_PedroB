@@ -79,6 +79,11 @@ position = Vector2(-1, -1.5)
 shape = SubResource("RectangleShape2D_hqtel")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1266805929]
+zoom = Vector2(0.8, 0.8)
+limit_left = 0
+limit_top = -380
+limit_right = 1883
+limit_bottom = 256
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1828012833]
 position = Vector2(-1.5, 0)
