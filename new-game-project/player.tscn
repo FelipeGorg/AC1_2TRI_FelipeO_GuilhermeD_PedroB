@@ -1,19 +1,10 @@
 [gd_scene format=3 uid="uid://ckudr8chj1kgo"]
 
 [ext_resource type="Script" uid="uid://80kl10p8d3vr" path="res://player.gd" id="1_onrkg"]
-[ext_resource type="Texture2D" uid="uid://muw0yorrv6lx" path="res://kenney_platformer-art-deluxe/Base pack/Player/Player.png" id="2_bwjto"]
-[ext_resource type="Texture2D" uid="uid://bq0rdg1rat6bj" path="res://kenney_platformer-art-deluxe/Base pack/Player/p3_jump.png" id="3_606se"]
-[ext_resource type="Texture2D" uid="uid://b4d5tealbnmy2" path="res://kenney_platformer-art-deluxe/Base pack/Player/Player2.png" id="3_u1c27"]
-[ext_resource type="Texture2D" uid="uid://bhwrv4aohml7m" path="res://kenney_platformer-art-deluxe/Base pack/Player/p3_walk/PNG/p3_walk02.png" id="3_urp6f"]
-[ext_resource type="Texture2D" uid="uid://cojf3q1oqrmcg" path="res://kenney_platformer-art-deluxe/Base pack/Player/p3_walk/PNG/p3_walk03.png" id="4_bwjto"]
-[ext_resource type="Texture2D" uid="uid://drvotjs5der5h" path="res://kenney_platformer-art-deluxe/Base pack/Player/p3_walk/PNG/p3_walk04.png" id="5_606se"]
-[ext_resource type="Texture2D" uid="uid://bksabfxargko4" path="res://kenney_platformer-art-deluxe/Base pack/Player/p3_walk/PNG/p3_walk05.png" id="6_u1c27"]
-[ext_resource type="Texture2D" uid="uid://dddevwkx3e47g" path="res://kenney_platformer-art-deluxe/Base pack/Player/p3_walk/PNG/p3_walk06.png" id="7_op7ga"]
-[ext_resource type="Texture2D" uid="uid://d387p8m6q73pu" path="res://kenney_platformer-art-deluxe/Base pack/Player/p3_walk/PNG/p3_walk07.png" id="8_q13i1"]
-[ext_resource type="Texture2D" uid="uid://d1qlrxt478eco" path="res://kenney_platformer-art-deluxe/Base pack/Player/p3_walk/PNG/p3_walk08.png" id="9_pylmc"]
-[ext_resource type="Texture2D" uid="uid://cuxy88ie0xwg" path="res://kenney_platformer-art-deluxe/Base pack/Player/p3_walk/PNG/p3_walk09.png" id="10_pbfsw"]
-[ext_resource type="Texture2D" uid="uid://ncoelqn10vxx" path="res://kenney_platformer-art-deluxe/Base pack/Player/p3_walk/PNG/p3_walk10.png" id="11_5tmop"]
-[ext_resource type="Texture2D" uid="uid://con03c3lngncx" path="res://kenney_platformer-art-deluxe/Base pack/Player/p3_walk/PNG/p3_walk11.png" id="12_7ahtn"]
+[ext_resource type="Texture2D" uid="uid://dk10vd1taf8aw" path="res://kenney_platformer-art-deluxe/Base pack/Player/PlayerACTRI2/frame pulando.png" id="3_2hs0m"]
+[ext_resource type="Texture2D" uid="uid://dfb8skpkg10c6" path="res://kenney_platformer-art-deluxe/Base pack/Player/PlayerACTRI2/FRAME 2.png" id="4_1jxqw"]
+[ext_resource type="Texture2D" uid="uid://bsjc1hue1c34q" path="res://kenney_platformer-art-deluxe/Base pack/Player/PlayerACTRI2/FRAME 3.png" id="5_dw050"]
+[ext_resource type="Texture2D" uid="uid://bnbbu460f1ymb" path="res://kenney_platformer-art-deluxe/Base pack/Player/PlayerACTRI2/Frame 4 1.png" id="6_b26j0"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_hqtel"]
 size = Vector2(54, 87)
@@ -22,10 +13,7 @@ size = Vector2(54, 87)
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("2_bwjto")
-}, {
-"duration": 1.0,
-"texture": ExtResource("3_u1c27")
+"texture": ExtResource("4_1jxqw")
 }],
 "loop": true,
 "name": &"idle",
@@ -33,7 +21,7 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("3_606se")
+"texture": ExtResource("3_2hs0m")
 }],
 "loop": true,
 "name": &"jump",
@@ -41,34 +29,10 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("3_urp6f")
+"texture": ExtResource("5_dw050")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_bwjto")
-}, {
-"duration": 1.0,
-"texture": ExtResource("5_606se")
-}, {
-"duration": 1.0,
-"texture": ExtResource("6_u1c27")
-}, {
-"duration": 1.0,
-"texture": ExtResource("7_op7ga")
-}, {
-"duration": 1.0,
-"texture": ExtResource("8_q13i1")
-}, {
-"duration": 1.0,
-"texture": ExtResource("9_pylmc")
-}, {
-"duration": 1.0,
-"texture": ExtResource("10_pbfsw")
-}, {
-"duration": 1.0,
-"texture": ExtResource("11_5tmop")
-}, {
-"duration": 1.0,
-"texture": ExtResource("12_7ahtn")
+"texture": ExtResource("6_b26j0")
 }],
 "loop": true,
 "name": &"walk",
@@ -90,7 +54,7 @@ limit_right = 2950
 limit_bottom = 256
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1828012833]
-position = Vector2(-3, -10)
-scale = Vector2(2.3569446, 2.1923077)
+position = Vector2(1, -1.000001)
+scale = Vector2(0.16981131, 0.13934426)
 sprite_frames = SubResource("SpriteFrames_7lmhl")
-animation = &"idle"
+animation = &"walk"

@@ -1,0 +1,35 @@
+[gd_scene format=3 uid="uid://m6lga3qjuwc3"]
+
+[ext_resource type="Texture2D" uid="uid://dvib03vqv72nk" path="res://kenney_platformer-art-deluxe/Base pack/Enemies/InimigosACTRI2/PEGA A MINHOCA.png" id="1_3qu5m"]
+[ext_resource type="Texture2D" uid="uid://celotg4gey4nr" path="res://kenney_platformer-art-deluxe/Base pack/Enemies/InimigosACTRI2/PEGA A MINHOCA (2).png" id="2_4svmd"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_4svmd"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_3qu5m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_4svmd")
+}],
+"loop": true,
+"name": &"enemy",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_3qu5m"]
+radius = 35.0
+height = 144.0
+
+[node name="CharacterBody2D" type="CharacterBody2D" unique_id=618511639]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=869246593]
+position = Vector2(7, -8.000002)
+scale = Vector2(0.186, 0.175)
+sprite_frames = SubResource("SpriteFrames_4svmd")
+animation = &"enemy"
+autoplay = "enemy"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=775490386]
+position = Vector2(8, 2)
+shape = SubResource("CapsuleShape2D_3qu5m")
