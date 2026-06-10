@@ -2,6 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://b083qgsjtt24f" path="res://kenney_platformer-art-deluxe/Base pack/Tiles/tiles_spritesheet.png" id="1_vvh5f"]
 [ext_resource type="Texture2D" uid="uid://dynac7ep0wi4e" path="res://kenney_platformer-art-deluxe/Base pack/Tiles/BlocoFundo.png" id="2_ld3c5"]
+[ext_resource type="Texture2D" uid="uid://gaqbukflctei" path="res://kenney_platformer-art-deluxe/Base pack/Tiles/580cca5efa65c7c69ba5cad9e954698d-ilustracao-de-foguete-espacial.webp" id="3_0wtk1"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ihfcg"]
 texture = ExtResource("1_vvh5f")
@@ -14,6 +15,7 @@ texture_region_size = Vector2i(70, 70)
 4:0/0 = 0
 5:0/0 = 0
 6:0/0 = 0
+6:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-35, 6.691246, 35, 7.0098763, 35, -1.5931549, -35, -2.5490456)
 7:0/0 = 0
 8:0/0 = 0
 9:0/0 = 0
@@ -558,6 +560,7 @@ texture_region_size = Vector2i(70, 70)
 53:10/0 = 0
 54:10/0 = 0
 0:11/0 = 0
+0:11/0/physics_layer_0/polygon_0/points = PackedVector2Array(-35, -35, 35, -35, 35, 35, -35, 35)
 1:11/0 = 0
 1:11/0/physics_layer_0/polygon_0/points = PackedVector2Array(-35, -35, 35, -35, 35, 35, -35, 35)
 2:11/0 = 0
@@ -2919,8 +2922,34 @@ texture_region_size = Vector2i(89, 89)
 1:2/0 = 0
 2:2/0 = 0
 
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_v6gsl"]
+texture = ExtResource("3_0wtk1")
+texture_region_size = Vector2i(70, 70)
+3:0/0 = 0
+3:1/0 = 0
+4:1/0 = 0
+3:2/0 = 0
+4:2/0 = 0
+2:3/0 = 0
+3:3/0 = 0
+4:3/0 = 0
+2:4/0 = 0
+3:4/0 = 0
+4:4/0 = 0
+2:5/0 = 0
+3:5/0 = 0
+4:5/0 = 0
+5:5/0 = 0
+2:6/0 = 0
+3:6/0 = 0
+4:6/0 = 0
+5:6/0 = 0
+2:2/0 = 0
+2:1/0 = 0
+
 [resource]
 tile_size = Vector2i(70, 70)
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_ihfcg")
 sources/1 = SubResource("TileSetAtlasSource_0wtk1")
+sources/2 = SubResource("TileSetAtlasSource_v6gsl")

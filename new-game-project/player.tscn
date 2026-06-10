@@ -1,8 +1,9 @@
 [gd_scene format=3 uid="uid://ckudr8chj1kgo"]
 
 [ext_resource type="Script" uid="uid://80kl10p8d3vr" path="res://player.gd" id="1_onrkg"]
-[ext_resource type="Texture2D" uid="uid://j0qbfe76t4lb" path="res://kenney_platformer-art-deluxe/Base pack/Player/p3_stand.png" id="2_bwjto"]
+[ext_resource type="Texture2D" uid="uid://muw0yorrv6lx" path="res://kenney_platformer-art-deluxe/Base pack/Player/Player.png" id="2_bwjto"]
 [ext_resource type="Texture2D" uid="uid://bq0rdg1rat6bj" path="res://kenney_platformer-art-deluxe/Base pack/Player/p3_jump.png" id="3_606se"]
+[ext_resource type="Texture2D" uid="uid://b4d5tealbnmy2" path="res://kenney_platformer-art-deluxe/Base pack/Player/Player2.png" id="3_u1c27"]
 [ext_resource type="Texture2D" uid="uid://bhwrv4aohml7m" path="res://kenney_platformer-art-deluxe/Base pack/Player/p3_walk/PNG/p3_walk02.png" id="3_urp6f"]
 [ext_resource type="Texture2D" uid="uid://cojf3q1oqrmcg" path="res://kenney_platformer-art-deluxe/Base pack/Player/p3_walk/PNG/p3_walk03.png" id="4_bwjto"]
 [ext_resource type="Texture2D" uid="uid://drvotjs5der5h" path="res://kenney_platformer-art-deluxe/Base pack/Player/p3_walk/PNG/p3_walk04.png" id="5_606se"]
@@ -22,6 +23,9 @@ animations = [{
 "frames": [{
 "duration": 1.0,
 "texture": ExtResource("2_bwjto")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_u1c27")
 }],
 "loop": true,
 "name": &"idle",
@@ -82,11 +86,11 @@ shape = SubResource("RectangleShape2D_hqtel")
 zoom = Vector2(0.8, 0.8)
 limit_left = 0
 limit_top = -380
-limit_right = 1883
+limit_right = 2950
 limit_bottom = 256
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1828012833]
-position = Vector2(-1.5, 0)
-scale = Vector2(1.0138888, 1)
+position = Vector2(-3, -10)
+scale = Vector2(2.3569446, 2.1923077)
 sprite_frames = SubResource("SpriteFrames_7lmhl")
 animation = &"idle"
