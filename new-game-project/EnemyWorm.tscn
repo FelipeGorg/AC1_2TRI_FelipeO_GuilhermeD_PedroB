@@ -22,6 +22,7 @@ radius = 35.0
 height = 144.0
 
 [node name="CharacterBody2D" type="CharacterBody2D" unique_id=618511639]
+position = Vector2(141, 135)
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=869246593]
 position = Vector2(7, -8.000002)
@@ -33,3 +34,11 @@ autoplay = "enemy"
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=775490386]
 position = Vector2(8, 2)
 shape = SubResource("CapsuleShape2D_3qu5m")
+
+[node name="baixo" type="RayCast2D" parent="." unique_id=681785883]
+position = Vector2(7, 8)
+target_position = Vector2(-20, 10)
+
+[node name="cima" type="RayCast2D" parent="." unique_id=563386214]
+position = Vector2(7, -1)
+target_position = Vector2(-20, -66)
