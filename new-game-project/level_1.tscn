@@ -9,10 +9,10 @@
 [ext_resource type="Texture2D" uid="uid://b083qgsjtt24f" path="res://kenney_platformer-art-deluxe/Base pack/Tiles/tiles_spritesheet.png" id="3_hn12h"]
 [ext_resource type="TileSet" uid="uid://704pya6l1dcm" path="res://terreno.tres" id="4_ihfcg"]
 [ext_resource type="Texture2D" uid="uid://d2qx4b1yngq11" path="res://kenney_platformer-art-deluxe/Base pack/Tiles/hill_small.png" id="5_5hph3"]
+[ext_resource type="PackedScene" uid="uid://2oqfqxx5b61g" path="res://enemy.tscn" id="7_ggavl"]
 [ext_resource type="Texture2D" uid="uid://ny5vtw31nhqq" path="res://kenney_platformer-art-deluxe/Base pack/Items/items_spritesheet.png" id="8_27bay"]
 [ext_resource type="Texture2D" uid="uid://dvib03vqv72nk" path="res://kenney_platformer-art-deluxe/Base pack/Enemies/InimigosACTRI2/PEGA A MINHOCA.png" id="9_1pe0h"]
 [ext_resource type="PackedScene" uid="uid://m6lga3qjuwc3" path="res://EnemyWorm.tscn" id="10_27bay"]
-[ext_resource type="PackedScene" uid="uid://cfn8n8t60qrm6" path="res://EnemyWorm2.tscn" id="10_sof0w"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_rka8t"]
 texture = ExtResource("1_ihfcg")
@@ -7367,12 +7367,15 @@ texture = ExtResource("1_hbghi")
 position = Vector2(309, 269)
 shape = SubResource("WorldBoundaryShape2D_ihfcg")
 
+[node name="Enemy" parent="Chão" unique_id=642687672 instance=ExtResource("7_ggavl")]
+position = Vector2(1846, 217)
+
 [node name="ObstáculosInimigos" type="TileMapLayer" parent="." unique_id=71582290]
 tile_map_data = PackedByteArray("AACcAAgAAQANAA0AAACcAAkAAQANAA4AAACcAAoAAQANAA8AAACcAAsAAQANABAAAACcAAwAAQANABEAAACdAAgAAQAOAA0AAACdAAkAAQAOAA4AAACdAAoAAQAOAA8AAACdAAsAAQAOABAAAACdAAwAAQAOABEAAACeAAgAAQAPAA0AAACeAAkAAQAPAA4AAACeAAoAAQAPAA8AAACfAAkAAQAQAA4AAACfAAoAAQAQAA8AAACgAAkAAQARAA4AAACgAAoAAQARAA8AAACHAAEAAQAEABgAAACHAAIAAQAEABkAAACIAAAAAQAFABcAAACIAAEAAQAFABgAAACIAAIAAQAFABkAAACJAAAAAQAGABcAAACJAAEAAQAGABgAAACJAAIAAQAGABkAAACKAAEAAQAHABgAAACKAAIAAQAHABkAAACLAAEAAQAIABgAAACLAAIAAQAIABkAAABZAAkAAQABABIAAABaAAkAAQACABIAAABbAAYAAQADAA8AAABbAAkAAQADABIAAABcAAkAAQAEABIAAABQABAAAQAAABAAAABQABEAAQAAABEAAABQABIAAQAAABIAAABRAA8AAQABAA8AAABRABAAAQABABAAAABRABEAAQABABEAAABRABIAAQABABIAAABSAA8AAQACAA8AAABSABAAAQACABAAAABSABEAAQACABEAAABSABIAAQACABIAAABTAA8AAQADAA8AAABTABAAAQADABAAAABTABEAAQADABEAAABTABIAAQADABIAAABUABEAAQAEABEAAABUABIAAQAEABIAAABWABAAAQAAABAAAABWABEAAQAAABEAAABWABIAAQAAABIAAABXAA8AAQABAA8AAABXABAAAQABABAAAABXABEAAQABABEAAABXABIAAQABABIAAABYAA8AAQACAA8AAABYABAAAQACABAAAABYABEAAQACABEAAABYABIAAQACABIAAABZAA8AAQADAA8AAABZABAAAQADABAAAABZABEAAQADABEAAABZABIAAQADABIAAABaABEAAQAEABEAAABaABIAAQAEABIAAABcAAsAAQAFABQAAABcAAwAAQAFABUAAABdAAsAAQAGABQAAABdAAwAAQAGABUAAABdAA0AAQAGABYAAABeAAsAAQAHABQAAABeAAwAAQAHABUAAABeAA0AAQAHABYAAABiAAsAAQAFABQAAABiAAwAAQAFABUAAABjAAsAAQAGABQAAABjAAwAAQAGABUAAABjAA0AAQAGABYAAABkAAsAAQAHABQAAABkAAwAAQAHABUAAABkAA0AAQAHABYAAAA=")
 tile_set = SubResource("TileSet_bjebc")
 
-[node name="CharacterBody2D2" parent="." unique_id=1127742185 instance=ExtResource("10_sof0w")]
-position = Vector2(1158, 214)
+[node name="Enemy2" parent="." unique_id=742030666 instance=ExtResource("7_ggavl")]
+position = Vector2(1151, 241)
 
 [node name="CharacterBody2D" parent="." unique_id=618511639 instance=ExtResource("10_27bay")]
 position = Vector2(1847, 220)
