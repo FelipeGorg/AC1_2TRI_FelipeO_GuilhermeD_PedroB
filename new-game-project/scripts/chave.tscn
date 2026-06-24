@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://dn68ahwiv4xgy"]
+
+[ext_resource type="Texture2D" uid="uid://cfh4jxaqf5d6f" path="res://kenney_platformer-art-deluxe/Base pack/Items/keyYellow.png" id="1_7pnrv"]
+[ext_resource type="Script" uid="uid://dll0u13tvcoko" path="res://scripts/chave.gd" id="1_h7454"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4lytf"]
+size = Vector2(62, 39)
+
+[node name="Chave" type="Area2D" unique_id=1439855716]
+script = ExtResource("1_h7454")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1687224528]
+texture = ExtResource("1_7pnrv")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=893523067]
+position = Vector2(0, -2.5)
+shape = SubResource("RectangleShape2D_4lytf")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
