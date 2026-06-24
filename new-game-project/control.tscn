@@ -1,0 +1,83 @@
+[gd_scene format=3 uid="uid://bq3huk364skd3"]
+
+[ext_resource type="Script" uid="uid://vw1uik1lapom" path="res://control.gd" id="1_0fbet"]
+[ext_resource type="Script" uid="uid://dj2jowr4at3rv" path="res://play.gd" id="2_62e2m"]
+
+[sub_resource type="FontFile" id="FontFile_62e2m"]
+cache/0/variation_coordinates = {}
+cache/0/face_index = 0
+cache/0/embolden = 0.0
+cache/0/transform = Transform2D(1, 0, 0, 1, 0, 0)
+cache/0/spacing_top = 0
+cache/0/spacing_bottom = 0
+cache/0/spacing_space = 0
+cache/0/spacing_glyph = 0
+cache/0/baseline_offset = 0.0
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/70/0/ascent = 0.0
+cache/0/70/0/descent = 0.0
+cache/0/70/0/underline_position = 0.0
+cache/0/70/0/underline_thickness = 0.0
+cache/0/70/0/scale = 1.0
+
+[node name="Control" type="Control" unique_id=1151983848]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_0fbet")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=301388252]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.08299694, 6.285575e-06, 0.08299606, 1)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1850026250]
+layout_mode = 0
+offset_left = 143.0
+offset_top = 148.0
+offset_right = 1055.0
+offset_bottom = 339.0
+
+[node name="Label" type="Label" parent="VBoxContainer" unique_id=1956091277]
+layout_mode = 2
+theme_override_fonts/font = SubResource("FontFile_62e2m")
+theme_override_font_sizes/font_size = 70
+text = "O QUE HÁ ATRÁS DA PORTA?
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer/Label" unique_id=2079618212]
+layout_mode = 0
+offset_left = 262.0
+offset_top = 136.0
+offset_right = 621.0
+offset_bottom = 322.0
+alignment = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/Label/HBoxContainer" unique_id=2009483003]
+layout_mode = 2
+alignment = 1
+
+[node name="Play" type="Button" parent="VBoxContainer/Label/HBoxContainer/VBoxContainer" unique_id=474470009]
+layout_mode = 2
+theme_override_font_sizes/font_size = 60
+text = "JOGAR"
+script = ExtResource("2_62e2m")
+
+[node name="Comandos" type="Button" parent="VBoxContainer/Label/HBoxContainer/VBoxContainer" unique_id=370765537]
+layout_mode = 2
+theme_override_font_sizes/font_size = 60
+text = "COMANDOS
+"
