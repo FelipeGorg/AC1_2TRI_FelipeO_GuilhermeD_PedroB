@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="New Game Project"
-run/main_scene="uid://l1dhtqji1d6x"
+run/main_scene="uid://dfr8fqlkd82at"
 config/features=PackedStringArray("4.6", "Forward Plus")
 
 [input]

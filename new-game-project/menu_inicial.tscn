@@ -1,0 +1,45 @@
+[gd_scene format=3 uid="uid://dfr8fqlkd82at"]
+
+[ext_resource type="Script" uid="uid://id7hhtohcv2a" path="res://menu_inicial.gd" id="1_3exob"]
+[ext_resource type="Texture2D" uid="uid://bu14cpwq7urlt" path="res://kenney_platformer-art-deluxe/imagemBackground/81HQ4A9AN+L._AC_UF894,1000_QL80_.jpg" id="2_eap13"]
+
+[node name="MenuInicial" type="Control" unique_id=704417860]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_3exob")
+
+[node name="GameBackground" type="TextureRect" parent="." unique_id=40307126]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_eap13")
+
+[node name="Label" type="Label" parent="GameBackground" unique_id=446264975]
+layout_mode = 0
+offset_left = 301.0
+offset_top = 243.0
+offset_right = 849.0
+offset_bottom = 412.0
+theme_override_font_sizes/font_size = 60
+text = "SPACE ADVENTURE
+"
+
+[node name="Button" type="Button" parent="GameBackground" unique_id=1841724658]
+layout_mode = 0
+offset_left = 489.0
+offset_top = 357.0
+offset_right = 653.0
+offset_bottom = 434.0
+theme_override_colors/font_color = Color(0.5417326, 1, 0.52042997, 1)
+theme_override_font_sizes/font_size = 50
+text = "JOGAR
+"
+
+[connection signal="pressed" from="GameBackground/Button" to="." method="_on_jogar_button_pressed"]
