@@ -1,10 +1,11 @@
 [gd_scene format=3 uid="uid://ckudr8chj1kgo"]
 
-[ext_resource type="Script" uid="uid://80kl10p8d3vr" path="res://player.gd" id="1_onrkg"]
+[ext_resource type="Script" uid="uid://80kl10p8d3vr" path="res://Player/player.gd" id="1_onrkg"]
 [ext_resource type="Texture2D" uid="uid://dk10vd1taf8aw" path="res://kenney_platformer-art-deluxe/Base pack/Player/PlayerACTRI2/frame pulando.png" id="3_2hs0m"]
 [ext_resource type="Texture2D" uid="uid://dfb8skpkg10c6" path="res://kenney_platformer-art-deluxe/Base pack/Player/PlayerACTRI2/FRAME 2.png" id="4_1jxqw"]
 [ext_resource type="Texture2D" uid="uid://bsjc1hue1c34q" path="res://kenney_platformer-art-deluxe/Base pack/Player/PlayerACTRI2/FRAME 3.png" id="5_dw050"]
 [ext_resource type="Texture2D" uid="uid://bnbbu460f1ymb" path="res://kenney_platformer-art-deluxe/Base pack/Player/PlayerACTRI2/Frame 4 1.png" id="6_b26j0"]
+
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_hqtel"]
 size = Vector2(54, 87)

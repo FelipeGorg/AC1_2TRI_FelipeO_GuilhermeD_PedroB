@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://2oqfqxx5b61g"]
 
-[ext_resource type="PackedScene" uid="uid://m6lga3qjuwc3" path="res://EnemyWorm.tscn" id="1_qi2p4"]
+[ext_resource type="PackedScene" uid="uid://m6lga3qjuwc3" path="res://Enemy/EnemyWorm.tscn" id="1_qi2p4"]
 [ext_resource type="Texture2D" uid="uid://dvib03vqv72nk" path="res://kenney_platformer-art-deluxe/Base pack/Enemies/InimigosACTRI2/PEGA A MINHOCA.png" id="2_iifgy"]
 [ext_resource type="Texture2D" uid="uid://celotg4gey4nr" path="res://kenney_platformer-art-deluxe/Base pack/Enemies/InimigosACTRI2/PEGA A MINHOCA (2).png" id="3_epg4t"]
 [ext_resource type="Script" uid="uid://b1a2exggvbkey" path="res://killzone.gd" id="4_iifgy"]
